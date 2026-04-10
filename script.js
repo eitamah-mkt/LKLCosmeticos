@@ -25,27 +25,27 @@ document.addEventListener("DOMContentLoaded", () => {
       title: "LKL <span>Cosméticos</span>",
       btn1: "Time de Vendas Caucaia",
       btn2: "Time de Vendas Canindé",
-      btn3: "Central Atendimento Salões de Beleza e outros parceiros",
-      btn4: "Salão de beleza LKL - Canindé",
-      btn5: "Clube de Vantagens LKL",
+      btn3: "Avalie a LKL Caucaia e saiba como chegar até a loja",
+      btn4: "Avalie a LKL Canindé e saiba como chegar até a loja",
+      btn5: "Salão de beleza LKL - Canindé",
       feedTitle: "Últimos posts"
     },
     en: {
       title: "LKL <span>Cosmetics</span>",
       btn1: "Sales Team Caucaia",
       btn2: "Sales Team Canindé",
-      btn3: "Service Center - Beauty Salons & partners",
-      btn4: "LKL Beauty Salon - Canindé",
-      btn5: "LKL Benefits Club",
+      btn3: "Review LKL Caucaia and get directions to the store",
+      btn4: "Review LKL Canindé and get directions to the store",
+      btn5: "LKL Beauty Salon - Canindé",
       feedTitle: "Latest posts"
     },
     es: {
       title: "LKL <span>Cosméticos</span>",
       btn1: "Equipo de Ventas Caucaia",
       btn2: "Equipo de Ventas Canindé",
-      btn3: "Centro de Atención - Salones de Belleza y otros socios",
-      btn4: "Salón de belleza LKL - Canindé",
-      btn5: "Club de Ventajas LKL",
+      btn3: "Califica LKL Caucaia y aprende cómo llegar a la tienda",
+      btn4: "Califica LKL Canindé y aprende cómo llegar a la tienda",
+      btn5: "Salón de belleza LKL - Canindé",
       feedTitle: "Últimas publicaciones"
     }
   };
