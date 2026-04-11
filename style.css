@@ -67,6 +67,16 @@ main {
   cursor: pointer;
   transition: var(--transition);
   font-family: 'Inter', monospace;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.flag-icon {
+  width: 18px;
+  height: 18px;
+  border-radius: 2px;
+  object-fit: cover;
 }
 
 .lang-btn:hover {
