@@ -31,8 +31,8 @@ document.addEventListener("DOMContentLoaded", () => {
       btnCaucaia1: "Time de Vendas Caucaia",
       btnCaucaia2: "Avalie a LKL Caucaia e saiba como chegar até a loja",
       btnCaninde1: "Time de Vendas Canindé",
-      btnCaninde2: "Avalie a LKL Canindé e saiba como chegar até a loja",
-      btnCaninde3: "Salão de beleza LKL - Canindé",
+      btnCaninde2: "Salão de beleza LKL - Canindé",
+      btnCaninde3: "Avalie a LKL Canindé e saiba como chegar até a loja",
       feedTitle: "Últimos posts"
     },
     en: {
@@ -42,8 +42,8 @@ document.addEventListener("DOMContentLoaded", () => {
       btnCaucaia1: "Sales Team Caucaia",
       btnCaucaia2: "Review LKL Caucaia and get directions to the store",
       btnCaninde1: "Sales Team Canindé",
-      btnCaninde2: "Review LKL Canindé and get directions to the store",
-      btnCaninde3: "LKL Beauty Salon - Canindé",
+      btnCaninde2: "LKL Beauty Salon - Canindé",
+      btnCaninde3: "Review LKL Canindé and get directions to the store",
       feedTitle: "Latest posts"
     },
     es: {
@@ -53,8 +53,8 @@ document.addEventListener("DOMContentLoaded", () => {
       btnCaucaia1: "Equipo de Ventas Caucaia",
       btnCaucaia2: "Califica LKL Caucaia y aprende cómo llegar a la tienda",
       btnCaninde1: "Equipo de Ventas Canindé",
-      btnCaninde2: "Califica LKL Canindé y aprende cómo llegar a la tienda",
-      btnCaninde3: "Salón de belleza LKL - Canindé",
+      btnCaninde2: "Salón de belleza LKL - Canindé",
+      btnCaninde3: "Califica LKL Canindé y aprende cómo llegar a la tienda",
       feedTitle: "Últimas publicaciones"
     }
   };
@@ -75,14 +75,14 @@ document.addEventListener("DOMContentLoaded", () => {
       regionTitles[1].innerHTML = `<i class="fas fa-map-marker-alt"></i> ${t.regionCaninde}`;
     }
 
-    // Botões Caucaia (primeira região)
+    // Botões Caucaia (primeira região) - 2 botões
     const caucaiaBtns = document.querySelectorAll('.region-section:first-child .btn');
     if (caucaiaBtns.length >= 2) {
       caucaiaBtns[0].querySelector('span:nth-child(2)').textContent = t.btnCaucaia1;
       caucaiaBtns[1].querySelector('span:nth-child(2)').textContent = t.btnCaucaia2;
     }
 
-    // Botões Canindé (segunda região)
+    // Botões Canindé (segunda região) - 3 botões: Vendas, Salão, Avaliar
     const canindeBtns = document.querySelectorAll('.region-section:last-child .btn');
     if (canindeBtns.length >= 3) {
       canindeBtns[0].querySelector('span:nth-child(2)').textContent = t.btnCaninde1;
