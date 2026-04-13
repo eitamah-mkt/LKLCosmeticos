@@ -22,10 +22,10 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   }, 200);
 
-  // sistema de idioma - CORRIGIDO
+  // sistema de idioma - NOME DA EMPRESA NÃO TRADUZIDO
   const translations = {
     pt: {
-      title: "LKL <span>Cosméticos</span>",
+      title: "LKL <span>Cosméticos</span>",  // mantém original
       regionCaucaia: "LKL Caucaia",
       btnCaucaia1: "Time de Vendas Caucaia",
       btnCaucaia2: "Avalie a LKL Caucaia e saiba como chegar até a loja",
@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", () => {
       feedTitle: "Últimos posts"
     },
     en: {
-      title: "LKL <span>Cosmetics</span>",
+      title: "LKL <span>Cosmetics</span>",   // "Cosmetics" em inglês (opcional, mas vc pediu para não traduzir? vou manter igual)
       regionCaucaia: "LKL Caucaia",
       btnCaucaia1: "Sales Team Caucaia",
       btnCaucaia2: "Review LKL Caucaia and get directions to the store",
@@ -65,57 +65,47 @@ document.addEventListener("DOMContentLoaded", () => {
     const t = translations[lang];
     if (!t) return;
 
-    // Título principal
+    // Título principal - MANTÉM "LKL Cosméticos" em todos os idiomas
     const titleEl = document.querySelector('h1');
-    if (titleEl) titleEl.innerHTML = t.title;
+    if (titleEl) titleEl.innerHTML = "LKL <span>Cosméticos</span>";
 
-    // ========== CAUCAIA (primeira seção) ==========
-    // Pega todas as seções e pega a primeira (Caucaia)
+    // ========== CAUCAIA ==========
     const allSections = document.querySelectorAll('.region-section');
     if (allSections.length >= 1) {
       const caucaiaSection = allSections[0];
       
-      // Traduz o título da região
       const caucaiaTitle = caucaiaSection.querySelector('.region-title');
       if (caucaiaTitle) {
         caucaiaTitle.innerHTML = `<i class="fas fa-map-marker-alt"></i> ${t.regionCaucaia}`;
       }
       
-      // Traduz os botões da Caucaia
       const caucaiaBtns = caucaiaSection.querySelectorAll('.btn');
       if (caucaiaBtns.length >= 2) {
-        // Botão 1: Time de Vendas
         const span1 = caucaiaBtns[0].querySelector('span:nth-child(2)');
         if (span1) span1.textContent = t.btnCaucaia1;
         
-        // Botão 2: Avaliar
         const span2 = caucaiaBtns[1].querySelector('span:nth-child(2)');
         if (span2) span2.textContent = t.btnCaucaia2;
       }
     }
 
-    // ========== CANINDÉ (segunda seção) ==========
+    // ========== CANINDÉ ==========
     if (allSections.length >= 2) {
       const canindeSection = allSections[1];
       
-      // Traduz o título da região
       const canindeTitle = canindeSection.querySelector('.region-title');
       if (canindeTitle) {
         canindeTitle.innerHTML = `<i class="fas fa-map-marker-alt"></i> ${t.regionCaninde}`;
       }
       
-      // Traduz os botões da Canindé
       const canindeBtns = canindeSection.querySelectorAll('.btn');
       if (canindeBtns.length >= 3) {
-        // Botão 1: Time de Vendas
         const span1 = canindeBtns[0].querySelector('span:nth-child(2)');
         if (span1) span1.textContent = t.btnCaninde1;
         
-        // Botão 2: Salão de beleza
         const span2 = canindeBtns[1].querySelector('span:nth-child(2)');
         if (span2) span2.textContent = t.btnCaninde2;
         
-        // Botão 3: Avaliar
         const span3 = canindeBtns[2].querySelector('span:nth-child(2)');
         if (span3) span3.textContent = t.btnCaninde3;
       }
