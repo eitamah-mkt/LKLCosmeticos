@@ -22,28 +22,30 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   }, 200);
 
-  // sistema de idioma - NOME DA EMPRESA NÃO TRADUZIDO
+  // sistema de idioma
   const translations = {
     pt: {
-      title: "LKL <span>Cosméticos</span>",  // mantém original
+      title: "LKL <span>Cosméticos</span>",
       regionCaucaia: "LKL Caucaia",
       btnCaucaia1: "Time de Vendas Caucaia",
       btnCaucaia2: "Avalie a LKL Caucaia e saiba como chegar até a loja",
       regionCaninde: "LKL Canindé",
-      btnCaninde1: "Time de Vendas Canindé",
-      btnCaninde2: "Salão de beleza LKL - Canindé",
-      btnCaninde3: "Avalie a LKL Canindé e saiba como chegar até a loja",
+      btnCaninde1: "Vendedora Ana Clara",
+      btnCaninde2: "Vendedora Nilda",
+      btnCaninde3: "Salão de beleza LKL - Canindé",
+      btnCaninde4: "Avalie a LKL Canindé e saiba como chegar até a loja",
       feedTitle: "Últimos posts"
     },
     en: {
-      title: "LKL <span>Cosmetics</span>",   // "Cosmetics" em inglês (opcional, mas vc pediu para não traduzir? vou manter igual)
+      title: "LKL <span>Cosmetics</span>",
       regionCaucaia: "LKL Caucaia",
       btnCaucaia1: "Sales Team Caucaia",
       btnCaucaia2: "Review LKL Caucaia and get directions to the store",
       regionCaninde: "LKL Canindé",
-      btnCaninde1: "Sales Team Canindé",
-      btnCaninde2: "LKL Beauty Salon - Canindé",
-      btnCaninde3: "Review LKL Canindé and get directions to the store",
+      btnCaninde1: "Seller Ana Clara",
+      btnCaninde2: "Seller Nilda",
+      btnCaninde3: "LKL Beauty Salon - Canindé",
+      btnCaninde4: "Review LKL Canindé and get directions to the store",
       feedTitle: "Latest posts"
     },
     es: {
@@ -52,9 +54,10 @@ document.addEventListener("DOMContentLoaded", () => {
       btnCaucaia1: "Equipo de Ventas Caucaia",
       btnCaucaia2: "Califica LKL Caucaia y aprende cómo llegar a la tienda",
       regionCaninde: "LKL Canindé",
-      btnCaninde1: "Equipo de Ventas Canindé",
-      btnCaninde2: "Salón de belleza LKL - Canindé",
-      btnCaninde3: "Califica LKL Canindé y aprende cómo llegar a la tienda",
+      btnCaninde1: "Vendedora Ana Clara",
+      btnCaninde2: "Vendedora Nilda",
+      btnCaninde3: "Salón de belleza LKL - Canindé",
+      btnCaninde4: "Califica LKL Canindé y aprende cómo llegar a la tienda",
       feedTitle: "Últimas publicaciones"
     }
   };
@@ -65,11 +68,11 @@ document.addEventListener("DOMContentLoaded", () => {
     const t = translations[lang];
     if (!t) return;
 
-    // Título principal - MANTÉM "LKL Cosméticos" em todos os idiomas
+    // Título principal
     const titleEl = document.querySelector('h1');
-    if (titleEl) titleEl.innerHTML = "LKL <span>Cosméticos</span>";
+    if (titleEl) titleEl.innerHTML = t.title;
 
-    // ========== CAUCAIA ==========
+    // CAUCAIA
     const allSections = document.querySelectorAll('.region-section');
     if (allSections.length >= 1) {
       const caucaiaSection = allSections[0];
@@ -89,7 +92,7 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     }
 
-    // ========== CANINDÉ ==========
+    // CANINDÉ
     if (allSections.length >= 2) {
       const canindeSection = allSections[1];
       
@@ -99,7 +102,7 @@ document.addEventListener("DOMContentLoaded", () => {
       }
       
       const canindeBtns = canindeSection.querySelectorAll('.btn');
-      if (canindeBtns.length >= 3) {
+      if (canindeBtns.length >= 4) {
         const span1 = canindeBtns[0].querySelector('span:nth-child(2)');
         if (span1) span1.textContent = t.btnCaninde1;
         
@@ -108,6 +111,9 @@ document.addEventListener("DOMContentLoaded", () => {
         
         const span3 = canindeBtns[2].querySelector('span:nth-child(2)');
         if (span3) span3.textContent = t.btnCaninde3;
+        
+        const span4 = canindeBtns[3].querySelector('span:nth-child(2)');
+        if (span4) span4.textContent = t.btnCaninde4;
       }
     }
 
