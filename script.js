@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", () => {
       btnCaucaia2: "Avalie a LKL Caucaia e saiba como chegar até a loja",
       regionCaninde: "LKL Canindé",
       btnCaninde1: "Vendedora Ana Clara",
-      btnCaninde2: "Vendedora Nilda",
+      btnCaninde2: "Vendedora Ellen",
       btnCaninde3: "Salão de beleza LKL - Canindé",
       btnCaninde4: "Avalie a LKL Canindé e saiba como chegar até a loja",
       feedTitle: "Últimos posts"
@@ -43,7 +43,7 @@ document.addEventListener("DOMContentLoaded", () => {
       btnCaucaia2: "Review LKL Caucaia and get directions to the store",
       regionCaninde: "LKL Canindé",
       btnCaninde1: "Seller Ana Clara",
-      btnCaninde2: "Seller Nilda",
+      btnCaninde2: "Seller Ellen",
       btnCaninde3: "LKL Beauty Salon - Canindé",
       btnCaninde4: "Review LKL Canindé and get directions to the store",
       feedTitle: "Latest posts"
@@ -55,7 +55,7 @@ document.addEventListener("DOMContentLoaded", () => {
       btnCaucaia2: "Califica LKL Caucaia y aprende cómo llegar a la tienda",
       regionCaninde: "LKL Canindé",
       btnCaninde1: "Vendedora Ana Clara",
-      btnCaninde2: "Vendedora Nilda",
+      btnCaninde2: "Vendedora Ellen",
       btnCaninde3: "Salón de belleza LKL - Canindé",
       btnCaninde4: "Califica LKL Canindé y aprende cómo llegar a la tienda",
       feedTitle: "Últimas publicaciones"
